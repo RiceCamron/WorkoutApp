@@ -49,11 +49,24 @@ enum R {
             
             static let elapsedTime = "Elapsed Time"
             static let remainingTime = "Remaining Time"
+            
+            static let workoutStats = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
+            
+            static let stepsCounter = "Steps Counter"
         }
         
         enum Progress {
             static var navBarLeft = "Export"
             static var navBarRight = "Details"
+            
+            static let dailyPerfomance = "Daily perfomance"
+            static let last7Days = "Last 7 days"
+            static let monthlyPerformance = "Monthly performance"
+            static let last10Months = "Last 10 months"
         }
         
         enum Settings {}
@@ -74,6 +87,21 @@ enum R {
         enum Common {
             static var downArrow = UIImage(named: "down_arrow")
             static var add = UIImage(named: "add_button")
+        }
+        
+        enum Overview {
+            static let checkmarkNotDone = UIImage(named: "checkmark_not_done")
+            static let checkmarkDone = UIImage(named: "checkmark_done")
+            static let rightArrow = UIImage(named: "right_arrow")
+        }
+        
+        enum Session {
+            enum Stats {
+                static let averagePace = UIImage(named: "stats_averagePace")
+                static let heartRate = UIImage(named: "stats_heartRate")
+                static let totalDistance = UIImage(named: "stats_totalDistance")
+                static let totalSteps = UIImage(named: "stats_totalSteps")
+            }
         }
     }
     

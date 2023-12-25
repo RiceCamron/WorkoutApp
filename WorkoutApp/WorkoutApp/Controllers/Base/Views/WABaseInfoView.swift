@@ -17,7 +17,7 @@ class WABaseInfoView: WABaseView {
     
     private let button = WAButton(with: .primary)
     
-    private lazy var contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = R.Colors.separator.cgColor
@@ -31,7 +31,8 @@ class WABaseInfoView: WABaseView {
         
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
-        button.setTitle(buttonTitle)
+        
+        button.setTitle(buttonTitle?.uppercased())
         button.isHidden = buttonTitle == nil ? true : false
         
         super.init(frame: .zero)
